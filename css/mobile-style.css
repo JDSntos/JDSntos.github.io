@@ -1,0 +1,26 @@
+/* Mobile Devices */
+@media screen and (min-width: 320px) 
+and (max-width: 768px){
+	.sidenav{
+		display: none;
+	}
+
+	.main{
+		margin-left: 0;
+		font-size: 1em;
+	}
+	/* Set padding of each sections inside main */
+	.section{
+  		padding: 8px 0px 32px 0px;
+	}
+
+	/* Default style of all container of each section */
+	.section .container {
+  		margin-top: 16px;
+  		padding-left: 32px;
+  		padding-right: 32px;
+  		padding-bottom: 16px;
+  		text-align: center;
+  	}
+
+}
