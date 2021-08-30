@@ -63,6 +63,7 @@ html, body{
   font-size: .9em;
 }
 
+
 /* --------------------------------------------------------------------- */
 
 /* Increment the fontsize of all text and set the default color */ 
@@ -90,7 +91,7 @@ html, body{
 /* Set the background image of the top section */
 #top {
   color: white;
-  height: 60vh;
+  height: 40vh;
   background-image: url('../images/bgimg.jpg');
   background-color: #808080; /* This will be displayed when image failed to load */
   background-position: center;
@@ -99,21 +100,12 @@ html, body{
   background-attachment: fixed;
 }
 
-
-/* Decorate the "Learn More" button on top section */
-#top a{
-  text-decoration: none;
-  color: white;
-  padding: 16px;
-  border-radius: 12px;
-  background-color: #4ABDFF;
-  transition-duration: .5s;
+#top h1 {
+  margin: 0 auto;
+  width: 60%;
 }
 
-#top a:hover{
-  background-color: #71CBFF;
-  transition-duration: .5s;
-}
+
 
 /* --------------------------------------------------------------------- */
 
@@ -152,11 +144,11 @@ html, body{
 
 #skills .container .row{
   display: flex;
+  flex-wrap: wrap;
   padding: 16px 16px 16px 0px;
 }
 
 #skills .container .row .col-1{
-  border-radius: 50%;
   flex: 25%;
   overflow: hidden;
   text-align: center;
