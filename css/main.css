@@ -1,3 +1,4 @@
+
 html, body{
   height: 100%;
   padding: 0;
@@ -7,7 +8,7 @@ html, body{
 /* Position the navbar on the left side of the screen */ 
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 17em;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -15,14 +16,35 @@ html, body{
   background-image: linear-gradient(#30363f, #48505C);
   background-color: #30363f;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 1em;
+}
 
+/* Style the personal details */
+.details{
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+/* Make image round and 50% of its original size */
+.details img{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.details h3{
+  font-size: 1.3em;
+}
+
+.details p{
+  color: #808080;
+  font-size: .9em;
 }
 
 /* Style each item in navlist  */
 .sidenav .nav-item {
-  margin-top: 20px;
-  padding: 6px 6px 6px 32px;
+  margin-top: 1em;
+  padding: .4em .4em .4em 2em;
   text-decoration: none;
   font-size: 1.2em;
   color: #808080;
@@ -45,67 +67,48 @@ html, body{
   color: #fff;
 }
 
-/* Style the personal details */
-.details{
-  text-align: center;
-  color: white;
-  padding: 10px;
-}
-
-/* Make image round and 50% of its original size */
-.details img{
-  width: 50%;
-  border-radius: 50%;
-}
-
-.details p{
-  color: #808080;
-  font-size: .9em;
-}
-
-
 /* --------------------------------------------------------------------- */
 
 /* Increment the fontsize of all text and set the default color */ 
 /* Set the margin-left of the main div equal to the width of sidebar */
 .main {
-  margin-left: 250px;
-  font-size: 1.2em;
+  margin-left: 17em;
   color: #30363f;
 }
 
 /* Set padding of each sections inside main */
 .section{
-  padding: 16px 0px 64px 0px;
+  padding: 1em 0em 4em 0em;
 }
 
 /* Default style of all container of each section */
 .section .container {
-  margin-top: 32px;
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-bottom: 16px;
+  margin-top: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
 /* Set the background image of the top section */
 #top {
   color: white;
-  height: 40vh;
-  background-image: url('../images/bgimg.jpg');
   background-color: #808080; /* This will be displayed when image failed to load */
+  background-image: url('../images/bgimg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-#top h1 {
+#top .container h1{
+  font-size: 2.5em;
   margin: 0 auto;
-  width: 60%;
 }
 
-
+#top .container p{
+  font-size: 1.4em;
+}
 
 /* --------------------------------------------------------------------- */
 
@@ -116,48 +119,51 @@ html, body{
   color: #808080;
 }
 
+.header h2{
+  font-size: 2.1em;
+}
+
 /* ---------------------------------------------------------------------- */
 
 #skills{
   background-color: #F7F7F7;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #skills .header hr{
   width: 20%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 2em 0;
 }
 
 #skills .icons li{
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
-  margin-right: 16px;
-  padding: 5px;
+  margin-right: 1em;
+  padding: .5em;
 }
 
 #skills .container{
-  box-shadow: 0px -5px #E0E0E0;
+  box-shadow: 0 -.4em #E0E0E0;
   background-color: #fff;
 }
 
 #skills .container .row{
   display: flex;
-  flex-wrap: wrap;
-  padding: 16px 16px 16px 0px;
+  padding: 1em 1em 1em 0;
 }
 
 #skills .container .row .col-1{
-  flex: 25%;
+  flex: 40%;
   overflow: hidden;
   text-align: center;
-  padding: 8px;
+  padding: .5em;
+  border: 1px solid red;
 }
 
 #skills .container .row .col-1 img{
   border-radius: 50%;
-  width: 100%;
+  width: 70%;
   transition-duration: .5s;
 }
 
@@ -168,19 +174,21 @@ html, body{
 }
 
 #skills .container .row .col-2{
-  flex: 75%;
-  padding: 8px 16px 8px 32px;
+  flex: 60%;
+  font-size: 1.1em;
+  padding: .5em 1em;
 }
 
 #skills .container .row .col-2 h3{
   font-weight: 700;
+  font-size: 1.7em;
 }
 
 #skills .container .row .col{
   flex: 33.33%;
   overflow: hidden;
   text-align: center;
-  padding: 16px;
+  padding: 1px;
 }
 
 #skills .container .row .col .card{
@@ -201,6 +209,7 @@ html, body{
 
 #skills .container .row .col .card h4{
   font-weight: 700;
+  font-size: 1.4em;
 }
 
 #skills .container .row .col .card ul{
@@ -279,6 +288,7 @@ html, body{
   background-color: #30363f;
   color: white;
   padding: 8px;
+  font-size: 1.2em;
   transform: rotateY(180deg);
 }
 
@@ -303,7 +313,13 @@ html, body{
 /* ----------------------------------------------------------------------------- */
 
 #contacts .container{
-  padding: 48px;
+  padding: 32px 16px;
+  font-size: 1.1em;
+}
+
+#contacts .container h2{
+  font-size: 2.1em;
+  font-weight: 700;
 }
 
 #contacts .container a{
@@ -323,12 +339,13 @@ html, body{
 /* ----------------------------------------------------------------------------- */
 
 footer{
-  padding: 8px 16px 8px 16px;
+  padding: 32px 16px;
   display: block;
   text-align: center;
   bottom: 0;
-  background-color: #F7F7F7;
+  color: white;
   box-shadow: 0px -5px #E0E0E0;
+  background-color: #48505C;
 }
 
 footer ul{
@@ -342,7 +359,7 @@ footer ul{
 footer ul li {
   display: inline-block;
   padding: 8px;
-  font-size: 1.5em;
+  font-size: 2em;
   opacity: .5;
 }
 
@@ -350,9 +367,6 @@ footer ul li:hover {
   opacity: 1;
 }
 
-footer p{
-  font-size: .7em;
-}
-footer a{
+footer #copyright{
   text-decoration: none;
 }

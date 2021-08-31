@@ -1,42 +1,23 @@
-/* Mobile Devices */
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 60em){
+	
 	.sidenav{
 		display: none;
 	}
 
 	.main{
-		margin-left: 0;
-		font-size: .9em;
-	}
-	/* Set padding of each sections inside main */
-	.section{
-  		padding: 8px 0px 32px 0px;
+		margin-left: 0px;
 	}
 
-	/* Default style of all container of each section */
-	.section .container {
-  		margin-top: 16px;
-  		padding-left: 32px;
-  		padding-right: 32px;
-  		padding-bottom: 16px;
-  		text-align: center;
-  	}
-
-  	#top{
-  		height: 60vh;
-  	}
-
-  	.row{
+	.row{
   		flex-direction: column;
-	}
+  		align-items: stretch;
+		}
 
-	#skills .container .row .col-1 img{
-  		width: 50%;
-	}
-
-	#project .container .row .col .card {
-  		width: 80%;
-  		margin: 0 auto;
+	@media screen and (min-width:  40em) and (max-width: 60em){
+		#skills .container .row .col-1 img{
+			width: 40%;
+		}
 
 	}
 
