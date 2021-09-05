@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML>
+<meta charset="utf-8">
+	<HEAD>
+		<title>Snake Game</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</HEAD>
+	<BODY>
+		<header>
+			<h1>Classic Snake</h1>
+		</header>
+		<div id="screen">
+			<div class="top">
+				<div class="top-element">
+					<label>Score: </label>
+					<p id="score">0</p>
+				</div>
+				<div class="top-element">
+					<label>Level: </label>
+					<p id="score">1</p>
+				</div>
+			</div>
+			
+			<div class="gameScreen">
+
+				<div id="gameOver">
+					<h2>GAME OVER!</h2>
+				</div>
+
+				<div id="prompt">
+					<h3>Play Classic Snake<br><span style="font-size: .7em;">(Choose Difficulty)</span></h3>
+				</div>
+				<div id="difficulty">
+					<input type="radio" name="radDiff" id="inp_easy" class="difficulty" value="80">
+					<label for="inp_easy">Easy</label>
+					<input type="radio" name="radDiff" id="inp_medium" class="difficulty" value="50">
+					<label for="inp_medium">Medium</label>
+					<input type="radio" name="radDiff" id="inp_hard" class="difficulty" value="30">
+					<label for="inp_hard">Hard</label>
+				</div>
+				<div id="button">
+					<input id="btn_start" type="button" class="button" name="start" value="Play" onclick="gameStart()">
+					<div class="options">
+						<button id="btn_prev" class="button" onclick="">PREV</button>
+						<button id="btn_next" class="button" onclick="">NEXT</button>
+					</div>
+				</div>
+
+				
+				<canvas id="gameArea" width="400" height="400"></canvas>
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript" src="js/snake.js"></script>
+	</BODY>
+</HTML>

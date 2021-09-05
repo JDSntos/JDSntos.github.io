@@ -1,0 +1,109 @@
+header{
+	border: 1px solid lightgreen;
+	text-align: center;
+	font-size: 1.2em;
+	width: 600px;
+	margin: 0 auto;
+	background-color: lightgreen;
+	color: white;
+}
+
+#screen{
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	text-align: center;
+	background-color: lightgreen;
+}
+
+#screen .top{
+	position: relative;
+}
+
+#screen .top .top-element{
+	display: inline-block;
+	position: relative;
+	margin: 0 110px;
+}
+
+#screen .top label, p{
+	display: inline-block;
+}
+
+#screen .top label{
+	font-weight: 700;
+}
+
+#screen .gameScreen{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+#gameOver{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 200px;
+	color: white;
+	background-color: red;
+	border-radius: 15px;
+	display: none;
+}
+
+#prompt{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 200px;
+	color: white;
+	background-color: #50DB00;
+	border-radius: 15px;
+}
+
+#difficulty{
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	width: 210px;
+}
+
+#button{
+	position: absolute;
+	left: 100px;
+	top: 250px;
+	width: 210px;
+}
+
+#button .button{
+	padding: 8px 16px;
+	margin: 5px 0;
+	background-color: #50DB00;
+	color: white;
+	border: none;
+}
+
+#button .button:hover{
+	background-color: lightgreen;
+	cursor: pointer;
+}
+
+#button .button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(1px);
+}
+
+canvas {
+	display: block;
+	background-color: white;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
