@@ -1,8 +1,13 @@
-
 html, body{
   height: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+#hamburger{
+  display: none;
 }
 
 /* Position the navbar on the left side of the screen */ 
